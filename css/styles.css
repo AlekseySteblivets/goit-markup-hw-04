@@ -242,6 +242,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 94px;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -480,4 +483,14 @@ img {
 
 .link-mail {
     margin-bottom: 9px;
+}
+
+.advantages-svg {
+
+}
+
+.advantages-svg-container {
+    height: 120px;
+    width: 270px;
+    background-color: var(--bg-section-cl);
 }
