@@ -405,7 +405,7 @@ img {
 }
 
 .team-item p {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     margin-top: 0px;
 }
 
@@ -485,12 +485,45 @@ img {
     margin-bottom: 9px;
 }
 
-.advantages-svg {
+/* .advantages-svg {
 
-}
+} */
 
 .advantages-svg-container {
     height: 120px;
     width: 270px;
     background-color: var(--bg-section-cl);
+}
+
+.social-icons-svg {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-icons:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icons-border {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.social-icons-border:hover .social-icons-svg,
+.social-icons-border:focus .social-icons-svg {
+    fill: var(--wight-text-cl);
+}
+
+.social-icons-border:hover {
+    background-color: var(--accent-cl);
 }
