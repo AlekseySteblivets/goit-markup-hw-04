@@ -257,6 +257,9 @@ img {
     color: var(--wight-text-cl);
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .dark-bg .list .link {
@@ -551,4 +554,20 @@ img {
 
 .social-icons-border:hover {
     background-color: var(--accent-cl);
+}
+
+.futer-social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+.futer-contacts {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-contacts .container {
+    display: flex;
+    align-items: center;
 }
