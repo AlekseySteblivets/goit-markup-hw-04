@@ -270,6 +270,31 @@ img {
     letter-spacing: 0.02em;
 }
 
+.envelope-before::before {
+    display: inline-block;
+    content: '';
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url(../images/sprite.svg/#icon-envelope);
+    background-size: contain;
+    background-position: center;
+
+}
+
+.smartfone-before::before {
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/sprite.svg/#icon-smartphone);
+    background-size: contain;
+    background-position: center;
+
+}
+
+
 .container-our-team{
     background-color: var(--bg-section-cl);
     height: 648px;
