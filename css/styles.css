@@ -13,6 +13,7 @@
     --wight-text-cl: #FFFFFF;
     --bg-dark-cl: #2F303A;
     --bg-section-cl: #EEEEEE;
+    --bg-futer-icons-link: rgba(255, 255, 255, 0.1);
 }
 /* п.3 задаем базовые стили и потом проверяем работают ли */
 body{
@@ -135,6 +136,7 @@ img {
     color: var(--title-text-cl);
     margin-bottom: 10px;
     margin-right: 30px;
+    margin-top: 0px;
 }
 
 
@@ -211,7 +213,9 @@ img {
     color: inherit;
     background-color: var(--wight-text-cl);
     margin-right: 30px;
-    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-item:last-child {
@@ -267,36 +271,36 @@ img {
 }
 
 .link-connection{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.envelope-before::before {
+.envelope-svg {
     display: inline-block;
-    content: '';
     width: 16px;
-    height: 12px;
+    height: 12px;    
     margin-right: 10px;
-    background-image: url(../images/sprite.svg/#icon-envelope);
     background-size: contain;
-    background-position: center;
-
+    background-position: center;    
 }
 
-.smartfone-before::before {
+.smartphone-svg {
     display: inline-block;
-    content: '';
-    width: 10px;
     height: 16px;
+    width: 10px;
     margin-right: 10px;
-    background-image: url(../images/sprite.svg/#icon-smartphone);
     background-size: contain;
     background-position: center;
-
 }
 
+.envelope-svg:hover,
+.smartphone-svg:hover {
+    fill: var(--accent-cl);
+}
 
 .container-our-team{
     background-color: var(--bg-section-cl);
@@ -514,18 +518,55 @@ img {
 }
 
 /* .advantages-svg {
+    width: 70px;
+    height: 70px;
+    
 
-} */
+}
 
 .advantages-svg-container {
     height: 120px;
     width: 270px;
+    background-color: 
+} */
+.item-icons-advantages::before {
+    content: "";
+    display: block;
+    height: 120px;
+    width: 270px;
     background-color: var(--bg-section-cl);
+    background-position: center;
+    background-repeat: no-repeat;    
+    margin-bottom: 30px;
+}
+
+.item-antenna::before {
+    content: "";
+    background-image: url(../images/antenna.svg);
+}
+
+.item-clock::before {
+    content: "";
+    background-image: url(../images/clock.svg);
+}
+
+.item-diagram::before {
+    content: "";
+    background-image: url(../images/diagram.svg);
+}
+
+.item-astronavt::before {
+    background-image: url(../images/astronaut.svg);
 }
 
 .social-icons-svg {
     width: 20px;
     height: 20px;
+    fill: var(--main-text-cl);
+}
+
+.futer-social .social-icons-svg {
+    fill: var(--wight-text-cl);
 }
 
 .social-icons {
@@ -545,6 +586,10 @@ img {
     border-radius: 50%;
     width: 44px;
     height: 44px;
+}
+.futer-social .social-icons-border {
+    background-color: var(--bg-futer-icons-link) ;
+
 }
 
 .social-icons-border:hover .social-icons-svg,
@@ -570,4 +615,12 @@ img {
 .section-contacts .container {
     display: flex;
     align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.futer-social h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
